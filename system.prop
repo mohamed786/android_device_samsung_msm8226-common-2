@@ -35,6 +35,7 @@ dalvik.vm.heapmaxfree=8m
 
 # Display
 debug.composition.type=c2d 
+debug.hwui.use_buffer_age=false
 ro.opengles.version=196608
 ro.qualcomm.cabl=0
 ro.sf.lcd_density=320
