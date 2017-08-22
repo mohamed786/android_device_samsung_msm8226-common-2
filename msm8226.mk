@@ -82,10 +82,9 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
