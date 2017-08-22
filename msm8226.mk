@@ -60,12 +60,9 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Snap
 
-# CRDA
+# DRM
 PRODUCT_PACKAGES += \
-    crda \
-    linville.key.pub.pem \
-    regdbdump \
-    regulatory.bin
+    android.hardware.drm@1.0-impl
 
 # Display
 PRODUCT_PACKAGES += \
