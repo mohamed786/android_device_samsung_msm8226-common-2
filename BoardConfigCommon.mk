@@ -20,6 +20,7 @@ VENDOR_PATH := device/samsung/msm8226-common
 include device/samsung/msm8226-common/board/*.mk
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
+
 # CMHW
 BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
 
