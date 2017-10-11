@@ -21,9 +21,6 @@ include device/samsung/msm8226-common/board/*.mk
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
-# CMHW
-BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
-
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../$(VENDOR_PATH)/ril
 
@@ -32,6 +29,10 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # Properties (reset them here, include more in device if needed)
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
+
+# Lineage hardware
+BOARD_HARDWARE_CLASS += \
+    $(VENDOR_PATH)/lineagehw
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
