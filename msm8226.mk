@@ -61,6 +61,9 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Snap
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	camera.disable_zsl_mode=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl
