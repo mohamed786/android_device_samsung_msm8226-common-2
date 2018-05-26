@@ -45,6 +45,10 @@ ro.gps.agps_provider=1
 ro.qc.sdk.izat.premium_enabled=0
 ro.qc.sdk.izat.service_mask=0x0
 
+# Media
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+
 # IO Scheduler
 sys.io.scheduler=bfq
 
