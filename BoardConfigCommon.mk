@@ -34,6 +34,9 @@ TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 BOARD_HARDWARE_CLASS += \
     $(VENDOR_PATH)/lineagehw
 
+# Shims
+TARGET_LD_SHIM_LIBS := /system/lib/hw/camera.vendor.msm8226.so|libboringssl-compat.so:/system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so:/system/lib/libcrypto.so|libboringssl-compat.so:/system/lib/libril.so|libril_shim.so:/system/vendor/lib/libwvm.so|libwvm_shim.so
+
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
 -include device/qcom/sepolicy/legacy-sepolicy.mk
